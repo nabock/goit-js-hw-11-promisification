@@ -17,13 +17,13 @@ const toggleUserState = (allUsers, userName) => {
 const logger = (updatedUsers) => console.table(updatedUsers);
 
 /*
- * было
+ * Работает так
  */
 // toggleUserState(users, "Mango", logger);
 // toggleUserState(users, "Lux", logger);
 
 /*
- * стало
+ * Должно работать так
  */
 toggleUserState(users, "Mango").then(logger);
 toggleUserState(users, "Lux").then(logger);
