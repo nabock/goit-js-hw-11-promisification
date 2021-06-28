@@ -27,14 +27,14 @@ const logError = (id) => {
 };
 
 /*
- * Працює так
+ * было
  */
 // makeTransaction({ id: 70, amount: 150 }, logSuccess, logError);
 // makeTransaction({ id: 71, amount: 230 }, logSuccess, logError);
 // makeTransaction({ id: 72, amount: 75 }, logSuccess, logError);
 // makeTransaction({ id: 73, amount: 100 }, logSuccess, logError);
 /*
- * Повинно працювати так
+ * стало
  */
 makeTransaction({ id: 70, amount: 150 }).then(logSuccess).catch(logError);
 
